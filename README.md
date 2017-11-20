@@ -87,7 +87,7 @@ sudo pip install nodeenv
 
 >Link para Download: https://www.google.com.br/chrome/browser/desktop/
 
-* Instalar **Atom**
+* Instalar o **Atom**
 
 >Link para Download: https://atom.io/
 
