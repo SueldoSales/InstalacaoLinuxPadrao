@@ -83,11 +83,15 @@ sudo pip install nodeenv
 
 * Instalar o **Google Chrome**
 
->Link para Download: https://www.google.com.br/chrome/browser/desktop/
+>Link para download: https://www.google.com.br/chrome/browser/desktop/
 
 * Instalar o **Atom**
 
->Link para Download: https://atom.io/
+>Link para download: https://atom.io/
+
+* Instalar o **Code**
+
+>Link para download: https://code.visualstudio.com/Download
 
 * Instalar o [**Spotify**](https://www.spotify.com/br/download/linux/)
 
