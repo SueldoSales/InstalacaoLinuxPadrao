@@ -89,7 +89,7 @@ php composer-setup.php
 php -r "unlink('composer-setup.php');"
 ```
 ```shell
-mv composer.phar /usr/local/bin/composer
+sudo mv composer.phar /usr/local/bin/composer
 ```
 
 * Instalar o **Google Chrome**
