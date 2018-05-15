@@ -20,7 +20,7 @@ git config --global user.email sueldosales@gmail.com
 * Instalar e configurar o **Apache**
 
 ```shell
-sudo apt-get install apache2 libapache2-mod-php7.1
+sudo apt-get install apache2 libapache2-mod-php7.X
 
 sudo vim /etc/apache2/sites-available/000-default.conf
 
@@ -36,7 +36,7 @@ sudo apt-get install mysql-server
 * Instalar o **PHP** e suas dependências
 
 ```shell
-sudo apt-get install php7.1 php7.1-mysql php7.1-json php7.1-curl php7.1-gd php7.1-intl php7.1-pspell php7.1-xml php7.1-xmlrpc php7.1-zip php7.1-cli php7.1-ldap aspell graphviz
+sudo apt-get install php7.X php7.X-mysql php7.X-json php7.X-curl php7.X-gd php7.X-intl php7.X-pspell php7.X-xml php7.X-xmlrpc php7.X-zip php7.X-cli php7.X-ldap aspell graphviz
 ```
 
 * Instalar e configurar o **PHPMyAdmin**
