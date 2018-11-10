@@ -91,6 +91,11 @@ php -r "unlink('composer-setup.php');"
 ```shell
 sudo mv composer.phar /usr/local/bin/composer
 ```
+* Instalar o [**Snap**](https://docs.snapcraft.io/installing-snap-on-ubuntu/6740)
+
+```shell
+sudo apt install snapd
+```
 
 * Instalar o **Google Chrome**
 
