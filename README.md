@@ -80,6 +80,12 @@ sudo python get-pip.py
 ```shell
 sudo pip install nodeenv
 ```
+* Instalar o **VirtualEnv**
+
+```shell
+sudo pip install virtualenv
+```
+
 * Instalar o [**Composer**](https://getcomposer.org)
 
 ```shell
