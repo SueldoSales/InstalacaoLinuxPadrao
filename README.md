@@ -85,6 +85,11 @@ sudo pip install nodeenv
 ```shell
 sudo pip install virtualenv
 ```
+* Instalar o **Python3 distutils**
+
+```shell
+suudo apt-get install python3-distutils
+```
 
 * Instalar o [**Composer**](https://getcomposer.org)
 
