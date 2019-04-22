@@ -2,7 +2,7 @@
 ### Aplicado no Linux Mint
 
 
-* Instalar alguns pacotes necessárias
+* Instalar alguns pacotes necessários
 
 ```shell
 sudo apt-get -y install sudo vim vim-scripts unzip zip p7zip-full htop iotop wget lynx curl locate ssh nano build-essential software-properties-common
