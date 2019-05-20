@@ -1,5 +1,5 @@
 # Minha instalação Linux padrão
-### Aplicado no Linux Mint
+### Testado no Linux Mint
 
 
 * Instalar alguns pacotes necessários
