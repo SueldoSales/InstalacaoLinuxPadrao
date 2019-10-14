@@ -34,6 +34,22 @@ sudo service apache2 reload
 sudo apt-get install mysql-server
 ```
 
+* Resolvendo root do **MySQL**
+
+```shell
+sudo mysql --user=root mysql
+
+SET GLOBAL validate_password_length = 6;
+
+update mysql.user set authentication_string=PASSWORD("SENHA"), plugin="mysql_native_password" where User='root' and Host='localhost';
+
+exit;
+
+sudo /etc/init.d/mysql restart
+sudo /etc/init.d/apache2 restart
+
+```
+
 * Instalar o **PHP** e suas dependências
 
 ```shell
