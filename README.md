@@ -37,16 +37,27 @@ sudo apt-get install mysql-server
 * Resolvendo root do **MySQL**
 
 ```shell
-sudo mysql --user=root mysql
+sudo /etc/init.d/mysql stop
 
-SET GLOBAL validate_password_length = 6;
-
-update mysql.user set authentication_string=PASSWORD("SENHA"), plugin="mysql_native_password" where User='root' and Host='localhost';
-
-exit;
+sudo mysqld --skip-grant-tables --user=mysql &
 
 sudo /etc/init.d/mysql restart
-sudo /etc/init.d/apache2 restart
+
+sudo mysql
+
+FLUSH PRIVILEGES;
+
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_passowrd';
+
+quit;
+
+sudo mysql -u root -p
+
+SELECT user,plugin,host FROM mysql.user WHERE user = 'root';
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'enter_password_here';
+
+FLUSH PRIVILEGES;
 
 ```
 
@@ -65,7 +76,7 @@ sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.co
 
 sudo a2enconf phpmyadmin
 
-sudo service apache2 reload
+systemctl reload apache2
 ```
 
 * Instalar o **Terminator**
