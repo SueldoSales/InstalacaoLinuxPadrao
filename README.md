@@ -1,5 +1,5 @@
 # Minha instalação Linux padrão
-### Testado no Linux Mint
+### Testado no Linux KDE Neon
 
 
 * Instalar alguns pacotes necessários
@@ -28,43 +28,36 @@ sudo vim /etc/apache2/sites-available/000-default.conf
 sudo service apache2 reload
 ```
 
-* Instalar e configurar o **MySQL**
+* Instalar e configurar o **MariaDB**
 
 ```shell
-sudo apt-get install mysql-server
+sudo apt-get install mariadb-server mariadb-client
+
+sudo systemctl enable mariadb.service
 ```
 
 * Resolvendo root do **MySQL**
 
 ```shell
-sudo /etc/init.d/mysql stop
+sudo mysql_secure_installation
 
-sudo mysqld --skip-grant-tables --user=mysql &
+sudo mysql -u root
 
-sudo /etc/init.d/mysql restart
+use mysql;
 
-sudo mysql
+update user set plugin='' where User='root';
 
-FLUSH PRIVILEGES;
+flush privileges;
 
-ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_passowrd';
+exit;
 
-quit;
-
-sudo mysql -u root -p
-
-SELECT user,plugin,host FROM mysql.user WHERE user = 'root';
-
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'enter_password_here';
-
-FLUSH PRIVILEGES;
-
+sudo systemctl restart mariadb.service
 ```
 
 * Instalar o **PHP** e suas dependências
 
 ```shell
-sudo apt-get install php7.2 php7.2-mysql php7.2-json php7.2-curl php7.2-gd php7.2-intl php7.2-pspell php7.2-xml php7.2-xmlrpc php7.2-zip php7.2-cli php7.2-ldap aspell graphviz
+sudo apt-get install php7.4 php7.4-mysql php7.4-json php7.4-curl php7.4-gd php7.4-intl php7.4-pspell php7.4-xml php7.4-xmlrpc php7.4-zip php7.4-cli php7.4-ldap aspell graphviz
 ```
 
 * Instalar e configurar o **PHPMyAdmin**
@@ -103,20 +96,7 @@ chsh -s /bin/zsh
 sudo python get-pip.py
 ```
 
-* Instalar o [**NodeEnv**](https://github.com/ekalinin/nodeenv)
-
-```shell
-sudo pip install nodeenv
-```
-
-* Instalar o [**Yarn**](https://yarnpkg.com/pt-BR/)
-
-```shell
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-
-sudo apt-get install --no-install-recommends yarn
-```
+* Instalar o [**NVM**](https://github.com/nvm-sh/nvm#installation-and-update)
 
 * Instalar o **VirtualEnv**
 
@@ -131,35 +111,12 @@ sudo apt-get install python3-distutils
 
 * Instalar o [**Composer**](https://getcomposer.org)
 
-```shell
-php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
-php -r "if (hash_file('sha384', 'composer-setup.php') === 'e0012edf3e80b6978849f5eff0d4b4e4c79ff1609dd1e613307e16318854d24ae64f26d17af3ef0bf7cfb710ca74755a') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
-php composer-setup.php
-php -r "unlink('composer-setup.php');"
-```
-```shell
-sudo mv composer.phar /usr/local/bin/composer
-```
 * Instalar o [**Snap**](https://docs.snapcraft.io/installing-snap-on-ubuntu/6740)
 
 ```shell
 sudo apt install snapd
 ```
 
-* Instalar o **Google Chrome**
+* Instalar o [**Google Chrome**](https://www.google.com.br/chrome/)
 
->Link para download: https://www.google.com.br/chrome/browser/desktop/
-
-* Instalar o **Atom**
-
->Link para download: https://atom.io/
-
-* Instalar o **Code**
-
->Link para download: https://code.visualstudio.com/Download
-
-* Instalar o [**Spotify**](https://www.spotify.com/br/download/linux/)
-
-```shell
-snap install spotify
-```
+* Instalar o [**Code**](https://code.visualstudio.com/Download)
