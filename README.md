@@ -21,7 +21,7 @@ git config --global user.email sueldosales@gmail.com
 * Instalar e configurar o **Apache**
 
 ```shell
-sudo apt-get install apache2 libapache2-mod-php7.2
+sudo apt-get install apache2 libapache2-mod-php7.4
 
 sudo vim /etc/apache2/sites-available/000-default.conf
 
@@ -36,7 +36,7 @@ sudo apt-get install mariadb-server mariadb-client
 sudo systemctl enable mariadb.service
 ```
 
-* Resolvendo root do **MySQL**
+* Resolvendo root do **MariaDB**
 
 ```shell
 sudo mysql_secure_installation
