@@ -1,6 +1,4 @@
 # Minha instalação Linux padrão
-### Testado no Linux KDE Neon
-
 
 * Instalar alguns pacotes necessários
 
@@ -28,32 +26,6 @@ sudo vim /etc/apache2/sites-available/000-default.conf
 sudo service apache2 reload
 ```
 
-* Instalar e configurar o **MariaDB**
-
-```shell
-sudo apt-get install mariadb-server mariadb-client
-
-sudo systemctl enable mariadb.service
-```
-
-* Resolvendo root do **MariaDB**
-
-```shell
-sudo mysql_secure_installation
-
-sudo mysql -u root
-
-use mysql;
-
-update user set plugin='' where User='root';
-
-flush privileges;
-
-exit;
-
-sudo systemctl restart mariadb.service
-```
-
 * Instalar o **PHP** e suas dependências
 
 ```shell
@@ -72,51 +44,20 @@ sudo a2enconf phpmyadmin
 systemctl reload apache2
 ```
 
-* Instalar o **Terminator**
-
-```shell
-sudo apt-get install terminator
-```
-
-* Instalar e configurar o [**Oh-my-zsh**](https://github.com/robbyrussell/oh-my-zsh)
-
-```shell
-sudo apt-get install zsh
-
-sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-
-chsh -s /bin/zsh
-```
-
-* Baixar e instalar o **PIP**
-
->Link para Download: https://pip.pypa.io/en/stable/installing/
-
-```shell
-sudo python get-pip.py
-```
-
 * Instalar o [**NVM**](https://github.com/nvm-sh/nvm#installation-and-update)
 
-* Instalar o **VirtualEnv**
+* Habilitar o **Yarn**
 
 ```shell
-sudo pip install virtualenv
-```
-* Instalar o **Python3 distutils**
-
-```shell
-sudo apt-get install python3-distutils
+corepack enable
 ```
 
-* Instalar o [**Composer**](https://getcomposer.org)
+* Instalar o [**Google Chrome**](https://www.google.com/intl/pt-BR/chrome/)
 
-* Instalar o [**Snap**](https://docs.snapcraft.io/installing-snap-on-ubuntu/6740)
+* Instalar o [**Code**](https://code.visualstudio.com/download)
 
-```shell
-sudo apt install snapd
-```
+* Instalar o [**Local**](https://localwp.com/)
 
-* Instalar o [**Google Chrome**](https://www.google.com.br/chrome/)
+* Instalar [**ZSH com OhMyZsh**](https://github.com/ohmyzsh/ohmyzsh/wiki)
 
-* Instalar o [**Code**](https://code.visualstudio.com/Download)
+* Instalar a fonte [**Cascadia Code**](https://github.com/microsoft/cascadia-code)
