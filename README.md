@@ -46,10 +46,12 @@ systemctl reload apache2
 
 * Instalar o [**NVM**](https://github.com/nvm-sh/nvm#installation-and-update)
 
-* Habilitar o **Yarn**
+* Instalar o **Yarn**
 
 ```shell
-corepack enable
+npm install --global yarn
+
+yarn --version
 ```
 
 * Instalar o [**Google Chrome**](https://www.google.com/intl/pt-BR/chrome/)
