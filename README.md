@@ -3,13 +3,13 @@
 * Instalar alguns pacotes necessários
 
 ```shell
-sudo apt-get -y install sudo vim vim-scripts unzip zip p7zip-full htop iotop wget lynx curl locate ssh nano build-essential software-properties-common
+sudo apt -y install vim vim-scripts unzip zip p7zip-full htop iotop wget lynx curl locate ssh nano build-essential software-properties-common
 ```
 
 * Instalar e configurar o **Git**
 
 ```shell
-sudo apt-get install git
+sudo apt install git
 
 git config --global user.name "Sueldo Sales"
 
@@ -19,7 +19,7 @@ git config --global user.email sueldosales@gmail.com
 * Instalar e configurar o **Apache**
 
 ```shell
-sudo apt-get install apache2 libapache2-mod-php7.4
+sudo apt install apache2 libapache2-mod-php
 
 sudo vim /etc/apache2/sites-available/000-default.conf
 
@@ -35,7 +35,7 @@ sudo apt install php php-mysql php-json php-curl php-gd php-intl php-pspell php-
 * Instalar e configurar o **PHPMyAdmin**
 
 ```shell
-sudo apt-get install phpmyadmin
+sudo apt install phpmyadmin
 
 sudo ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf-available/phpmyadmin.conf
 
