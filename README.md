@@ -11,9 +11,9 @@ sudo apt -y install vim vim-scripts unzip zip p7zip-full htop iotop wget lynx cu
 ```shell
 sudo apt install git
 
-git config --global user.name "Sueldo Sales"
+git config --global user.name "Nome Sobrenome"
 
-git config --global user.email sueldosales@gmail.com
+git config --global user.email seuemail@mail.com
 ```
 
 * Instalar e configurar o **Apache**
