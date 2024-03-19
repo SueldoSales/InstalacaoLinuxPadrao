@@ -15,6 +15,7 @@ git config --global user.name "Nome Sobrenome"
 
 git config --global user.email seuemail@mail.com
 ```
+* Instalar [**ZSH com OhMyZsh**](https://github.com/ohmyzsh/ohmyzsh/wiki)
 
 * Instalar e configurar o **Apache**
 
@@ -59,7 +60,5 @@ yarn --version
 * Instalar o [**Code**](https://code.visualstudio.com/download)
 
 * Instalar o [**Local**](https://localwp.com/)
-
-* Instalar [**ZSH com OhMyZsh**](https://github.com/ohmyzsh/ohmyzsh/wiki)
 
 * Instalar a fonte [**Cascadia Code**](https://github.com/microsoft/cascadia-code)
