@@ -50,9 +50,7 @@ systemctl reload apache2
 * Instalar o **Yarn**
 
 ```shell
-npm install --global yarn
-
-yarn --version
+npm install -g corepack
 ```
 
 * Instalar o [**Google Chrome**](https://www.google.com/intl/pt-BR/chrome/)
