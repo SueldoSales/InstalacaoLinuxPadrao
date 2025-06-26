@@ -405,7 +405,3 @@ sudo chmod -R 755 /var/www/html
 - [Apache Documentation](https://httpd.apache.org/docs/)
 
 ---
-
-**Última atualização:** $(date +"%d/%m/%Y")
-
-> 💡 **Dica:** Mantenha este documento atualizado conforme suas necessidades evoluem!
